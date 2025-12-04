@@ -176,7 +176,7 @@ context('Busca de serviços e informações no portal gov.br', () => {
     })
   })
 
-  it('Deve retornar à página inicial do gov.br - Versão corrigida', () => {
+  it('Deve retornar à página inicial do gov.br', () => {
     cy.visit('https://www.gov.br/pt-br/noticias')
     cy.wait(2000)
     cy.get('body').should('be.visible')
